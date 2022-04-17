@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: #5b3a29;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Base-font";
+}
+a :visited{
+    color: black;
+}
+
+@font-face {
+    font-family: "Base-font"; 
+    src: url("../fonts/base.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.header-wrapper{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+}
+.header-logo{
+    margin-left: calc(10% - 40px);
+}
+.header-social{
+    margin-right: calc(10% - 40px);
+    text-align: center;
+}
+.header-social__dark-theme{
+    width: 35px;
+}
