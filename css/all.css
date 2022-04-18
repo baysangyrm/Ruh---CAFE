@@ -7,12 +7,16 @@ html{
 a{
     text-decoration: none;
     font-size: 25px;
+    outline: none;
     font-family: "Base-font";
 }
 a :visited{
     color: black;
 }
-
+p{
+    font-size: 30px;
+    font-family: "Base-font";
+}
 @font-face {
     font-family: "Base-font"; 
     src: url("../fonts/base.ttf") format("truetype"); 
@@ -45,4 +49,20 @@ a :visited{
 }
 .header-social__dark-theme{
     width: 35px;
+}
+.main-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main-center__image{
+    margin-top: 30vh;
+    width: 220px;
+    align-items: center;
+}
+.main-center__all{
+    margin-right: 30px;
 }
