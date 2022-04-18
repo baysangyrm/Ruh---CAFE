@@ -27,7 +27,7 @@ self.addEventListener('install', function(event) {
            caches.open(CACHE_NAME)
                .then(function(cache) {
                    // Получаем данные из манифеста (они кэшируются)
-                   fetch('/manifest.json')
+                   fetch('/static/reader/manifest.json')
                        .then(response => {
                            response.json()
                        })
@@ -36,7 +36,7 @@ self.addEventListener('install', function(event) {
                            const urlsToCache = [
                                '/app/',
                 ........
-                               '/images/favicon/white.png*',
+                               '/static/core/logo.svg*',
                            ]
                            cache.addAll(urlsToCache)
                            console.log('cached');
