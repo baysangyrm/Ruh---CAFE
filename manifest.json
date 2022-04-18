@@ -1,9 +1,12 @@
 {
- "name": "Ruh - Cafe",
- "background_color": "#FFFFFF",
+"name": "Ruh - Cafe",
+"lang": "ru-RU",
+"start_url": "/",
+"background_color": "#FFFFFF",
 "theme_color": "#FFFFFF",
 "orientation": "any",
 "display": "standalone",
+"prefer_related_applications": true,
  "icons": [
   {
    "src": "/icons/android-icon-36x36.png",
