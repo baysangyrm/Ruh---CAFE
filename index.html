@@ -10,9 +10,14 @@
     <link rel="stylesheet" href="css/adaptive.css">
     <meta name="description" content="Кафетерий Ачхой-Мартана">
     <link rel="shortcut icon" href="images/favicon/white.png" type="image/x-icon">
+    <link rel="manifest" href="{% static "manifest.json" %}">
     <title>Ruh - Кафе</title>
 </head>
 <body>
+    <div id="root"></div>
+    <script src="/static/build/app.js"></script>
+
+
     <header class="header">
             <div class="header-wrapper">
                 <div class="header-logo">
@@ -65,5 +70,29 @@
         </div>
         <!-- /.container -->
     </section>
+
+
+
+
+
+
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+              }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+              }).catch(function(err) {
+                console.log(err)
+              });
+            });
+          } else {
+            console.log('service worker is not supported');
+          }
+    </script>
 </body>
 </html>
