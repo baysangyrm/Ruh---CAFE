@@ -1,0 +1,22 @@
+.contacts-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20vh;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.contacts-box{
+    display: block;
+    width: 200px;
+    margin-right: 9%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.contacts-box__image{
+    width: 50%;
+    display: block;
+    margin-right: 5%;
+    margin-left: 25%;
+    padding-bottom: 5%;
+}

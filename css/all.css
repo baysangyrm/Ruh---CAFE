@@ -41,10 +41,10 @@ p{
     width: 100vw;
 }
 .header-logo{
-    margin-left: calc(10% - 40px);
+    margin-left: calc(10% - 30px);
 }
 .header-social{
-    margin-right: calc(10% - 40px);
+    margin-right: calc(10% - 30px);
     text-align: center;
 }
 .header-social__dark-theme{
