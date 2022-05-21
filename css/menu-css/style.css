@@ -1,0 +1,37 @@
+.main-wrapper{
+    margin-top: 20vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.main-block{
+    margin-top: calc(5% + 10px);
+    margin-bottom: calc(5% + 10px);
+    margin-right: calc(5% + 20px);
+    margin-left: calc(5% + 20px);
+}
+.main-block__link{
+    font-size: 20%;
+}
+.main-block__link-image{
+    width: 150px;
+}
+.main-block__link-image__bakery{
+    height: 120px;
+}
+.soup{
+    height: 120px;
+}
+.pizza{
+    width: 200px;
+}
+.fastfood{
+    width: 200px;
+    margin-bottom: 15%;
+}
+.cake{
+    width: 162px;
+}

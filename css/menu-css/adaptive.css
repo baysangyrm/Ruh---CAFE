@@ -1,0 +1,14 @@
+@media (min-width: 300px) and (max-width: 1300px) { 
+    .container{
+        width: 80%;
+    }
+    .header-social__dark-theme__icon{
+        width: 30px;
+    }
+    .header-social__dark-theme{
+        font-size: 100%;
+    }
+    .header-logo__link{
+        width: calc(100% - 5px);
+    }
+}
