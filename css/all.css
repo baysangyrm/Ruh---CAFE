@@ -1,5 +1,11 @@
 *{
     box-sizing: border-box;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 html{
     background-color: #5b3a29;
@@ -26,7 +32,7 @@ p{
 [data-tooltip] {
     position: relative; /* Относительное позиционирование */ 
    }
-   [data-tooltip]::after {
+[data-tooltip]::after {
     content: attr(data-tooltip); /* Выводим текст */
     position: absolute; /* Абсолютное позиционирование */
     width: calc(20px + 100%); /* Ширина подсказки */
@@ -39,10 +45,11 @@ p{
     opacity: 0; /* Подсказка невидима */
     transition: 1s; /* Время появления подсказки */
    } 
-   [data-tooltip]:hover::after {
+[data-tooltip]:hover::after {
     opacity: 1; /* Показываем подсказку */
     top: 2em; /* Положение подсказки */
    }
+
 .tip{
     font-size: 20px;
     color: white;
