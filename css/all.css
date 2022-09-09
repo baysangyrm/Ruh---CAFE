@@ -23,7 +23,30 @@ p{
     font-style: normal; 
     font-weight: normal; 
 } 
-
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: calc(20px + 100%); /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #5b3a29; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+   }
+.tip{
+    font-size: 20px;
+    color: white;
+}
 .container{
     width: 1300px;
     margin: 0 auto;

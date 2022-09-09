@@ -35,3 +35,19 @@
 .cake{
     width: 162px;
 }
+.burger{
+    height: 120px;
+    width: 100px;
+}
+.pizza{
+    height: 120px;
+    width: 100px;
+}
+.pide{
+    height: 120px;
+    width: 100px;
+}
+
+.black{
+    color: black;
+}
